@@ -10,6 +10,7 @@ export const router = createBrowserRouter([
       { path: ROUTES.HOME, lazy: () => import('@/features/main/main.page') },
       { path: ROUTES.LOGIN, lazy: () => import('@/features/auth/login.page') },
       { path: ROUTES.REGISTER, lazy: () => import('@/features/auth/register.page') },
+      { path: ROUTES.SHLOKA, lazy: () => import('@/features/shloka/shloka.page') },
     ],
   },
 ])
