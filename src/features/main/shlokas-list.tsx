@@ -1,4 +1,5 @@
-import { Link } from 'react-router'
+import { ROUTES } from '@/shared/model/routes'
+import { href, Link } from 'react-router'
 
 type AksharaState = 'l' | 'g1' | 'g2' // laghu, guru1, guru2
 type Pada = 'first' | 'second' | 'third' | 'fourth'
@@ -34,7 +35,7 @@ export const ShlokasList = () => {
     <div className="flex flex-col gap-2">
       <div>Все шлоки</div>
       {shlokasListStub.map(({ id, label, description }) => (
-        <Link key={id} to={`shloka/${id}`}>
+        <Link key={id} to={href(ROUTES.SHLOKA, { id: '1' })}>
           <div title={description}>{label}</div>
         </Link>
       ))}

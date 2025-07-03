@@ -4,5 +4,5 @@ export const ROUTES = {
   HOME: '/',
   LOGIN: '/login',
   REGISTER: '/register',
-  SHLOKA: '/shloka/:id',
+  SHLOKA: '/shlokas/:id',
 } as const
