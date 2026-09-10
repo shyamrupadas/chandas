@@ -2,6 +2,7 @@ import { cn } from '@/shared/lib/utils'
 import { currentShloka, DIACRITIC_SYMBOLS } from './stubs'
 import { useReducer, useState } from 'react'
 import { Button } from '@/shared/components/ui/button'
+import { LineDisplay } from './tmp'
 
 type Language = 'ru' | 'en'
 
@@ -71,6 +72,7 @@ const ShlokaPage = () => {
           <>{el} </>
         ))}
       </div>
+      <LineDisplay />
     </div>
   )
 }
